@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+group = 'pl.zajavka'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.5.3'
+
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.30'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
+}
